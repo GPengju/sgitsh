@@ -1,0 +1,10 @@
+name: ubuntu
+on:
+  watch:
+    types:  started
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH connection to Actions
+      uses: P3TERX/debugger-action@master
